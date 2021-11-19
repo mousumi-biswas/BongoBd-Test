@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+#video-player-box {
+  width: 550px;
+  background: #000;
+  margin: 0px auto;
+}
+#video-control-bar {
+  background: rgb(187, 195, 216);
+  padding: 10px;
+}
+#video-control-bar input[type="image"] {
+  float: left;
+  height: 25px;
+  margin-left: 2px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+#video-control-bar input[type="range"] {
+  margin-top: 6px;
+  border: 1px solid black;
+}

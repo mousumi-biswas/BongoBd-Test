@@ -1,0 +1,51 @@
+interface Vehicle {
+    int set_num_of_wheels()
+    int set_num_of_passengers() 
+    boolean has_gas()
+    }
+
+ class Car constructor(
+        private val numberOfWheel: Int,
+        private val numberOfPassenger: Int,
+        private val hasGas: Boolean
+    ) : Vehicle {
+    
+        override fun setSumOfWheel(): Int {
+           return numberOfWheel
+        }
+    
+        override fun setNumOfPassenger(): Int {
+            return numberOfPassenger
+        }
+    
+        override fun hasGas(): Boolean {
+            return hasGas
+        }
+    
+    }
+    
+class Plane constructor(
+    private val numberOfWheel: Int,
+    private val numberOfPassenger: Int,
+    private val hasGas: Boolean
+) : Vehicle {
+
+    override fun setSumOfWheel(): Int {
+        return numberOfWheel
+    }
+
+    override fun setNumOfPassenger(): Int {
+        return numberOfPassenger
+    }
+
+    override fun hasGas(): Boolean {
+        return hasGas
+    }
+
+}
+
+/* We can create Car and Plane class using the OOP concept Polymorphism.
+Polymorphism is just a fancy way to put different function pointers by the concrete class. 
+It would fall into behavioral pattern. */
+
+    

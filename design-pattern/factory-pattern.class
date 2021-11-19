@@ -1,0 +1,16 @@
+interface Vehicle {
+    int set_num_of_wheels()
+    int set_num_of_passengers() 
+    boolean has_gas()
+    }
+
+class VehicleFactory {
+    fun makeCar(numberOfWheel: Int, numberOfPassenger: Int, hasGas: Boolean): Vehicle {
+        return Car(numberOfWheel, numberOfPassenger, hasGas)
+    }
+
+    fun makePlane(numberOfWheel: Int, numberOfPassenger: Int, hasGas: Boolean): Vehicle {
+        return Plane(numberOfWheel, numberOfPassenger, hasGas)
+    }
+}
+

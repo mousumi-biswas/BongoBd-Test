@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center; color: antiquewhite;">
+      Video Application Player
+    </h1>
+
+    <!--Containing Video player-->
+    <div id="video-player-box">
+      <video id="myVideo" width="550px" height="310px">
+        <source src="./video/Sun Tzu.mp4" />
+      </video>
+
+      <!--Control bar-->
+      <div id="video-control-bar">
+        <input type="image" src="./images/play.png" id="playBtn" />
+        <input type="image" src="images/pause.png" id="pauseBtn" />
+        <input type="image" src="images/forward.png" id="forwardBtn" />
+        <input type="image" src="images/rewind.png" id="rewindBtn" />
+        <input
+          id="seekSlider"
+          type="range"
+          min="0"
+          max="100"
+          value="0"
+          step="1"
+        />
+        <span id="curTimeText">00:00</span> /
+        <span id="durTimeText">00:00</span>
+      </div>
+    </div>
+
+    <!--script-->
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
